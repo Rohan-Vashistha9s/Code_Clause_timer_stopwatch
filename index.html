@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Timer and Stopwatch</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="color.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+
+
+  <main class="main">
+
+
+    <div class="content">
+
+
+      <div class="title">
+        <h2 class="timer__button"><i class="fas fa-clock"></i>Timer</h2>
+        <h2 class="stopwatch__button"><i class="fas fa-stopwatch"></i>Stopwatch</h2>
+      </div>
+
+      <div class="main__blog">
+
+        <div id="timer">
+
+          <div class="timer">
+
+            <div class="timerSquare">
+
+              <div class="timerNumber">
+            <input type="number" id="hours" placeholder="Hour" min="00" max="99">
+            <span>:</span>
+            <input type="number" id="minutes" placeholder="Min" min="00" max="59">
+            <span>:</span>
+            <input type="number" id="seconds" placeholder="Sec" min="00" max="59">
+            </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <button class="Start" onclick="startTimer()">Start</button>
+          <button class="stop" onclick="stopTimer()">Stop</button>
+          <button class="reset" onclick="resetTimer()">Reset</button>
+        </div>
+
+
+
+
+        <div class="stopwatch__content">
+
+          <div class="stopwatch">
+
+            <div class="hour">
+              <div class="stHour">0</div>
+              <p class="stopwatch__text">Hour</p>
+            </div>
+            <div class="min">
+              <div class="stMin">0</div>
+              <p class="stopwatch__text">Min</p>
+            </div>
+            <div class="sec">
+              <div class="stSec">0</div>
+              <p class="stopwatch__text">Sec</p>
+            </div>
+
+
+          </div>
+
+          <button class="start" type="button">start</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <i class="fas fa-cog active" id="settings"></i>
+
+    <div class="panel">
+      <div class="panel__content">
+
+        <p class="panel__text">Choose how timer looks to you. Select a single theme</p>
+
+        <i class="fas fa-times" id="panelX"></i>
+
+        <label for="" class="radio">
+          <input class="dark" type="radio" value="dark" name="pol">Dark theme
+          <input class="day" type="radio" value="day" name="pol">Day theme
+        </label>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
